@@ -1,0 +1,359 @@
+.landingPageContainer {
+  width: 100vw;
+  height: 100vh;
+  background: url("/public/image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+
+.landingPageContainer nav {
+  padding-inline: 1.2rem;
+  padding-block: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.landingPageContainer nav h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.landingPageContainer nav .navlist {
+  display: flex;
+  gap: 1.6rem;
+  cursor: pointer;
+
+}
+
+.landingMainContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 3rem;
+  height: 80vh;
+  align-items: center;
+}
+
+.landingMainContainer>div:nth-child(1) {
+  font-size: 2.2rem;
+}
+
+.landingMainContainer>div:nth-child(1) div[role='button'] {
+  background: #D97500;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-top: 1.9rem;
+}
+
+.landingMainContainer>div:nth-child(1) div[role='button'] a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+}
+
+.landingMainContainer>div:nth-child(2) img {
+  height: 70vh;
+  width: auto;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  text-align: center;
+  
+
+}
+.meetContainer {
+  display: flex;
+  padding-inline: 20px;
+  height: 80vh;
+  gap: 10vw;
+  justify-content: center;
+}
+
+
+.leftPanel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+.rightPanel {
+  display: flex;
+  align-items: center;
+}
+
+.rightPanel > img {
+  width: 30vw;
+  height: auto;
+  border-radius: 20px;
+}
+@keyframes float {
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+.landingPageContainer{
+    min-height:100vh;
+    overflow:hidden;
+
+    background:
+    linear-gradient(135deg,#020617,#0f172a,#1e1b4b);
+
+    color:white;
+}
+
+.navbar{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:20px 70px;
+
+background:rgba(0,0,0,.2);
+
+backdrop-filter:blur(15px);
+
+position:fixed;
+
+width:100%;
+
+z-index:1000;
+
+}
+
+.logo{
+
+font-size:34px;
+
+font-weight:800;
+
+background:linear-gradient(90deg,#8b5cf6,#3b82f6);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+.navlist{
+
+display:flex;
+
+gap:15px;
+
+align-items:center;
+
+}
+
+.landingMainContainer{
+
+display:flex;
+
+justify-content:space-around;
+
+align-items:center;
+
+height:100vh;
+
+padding:100px 70px;
+
+}
+
+.heroText{
+
+width:50%;
+
+}
+
+.heroText h1{
+
+font-size:70px;
+
+line-height:1.1;
+
+margin-bottom:20px;
+
+}
+
+.orange{
+
+color:#f59e0b;
+
+}
+
+.purple{
+
+color:#8b5cf6;
+
+}
+
+.heroText p{
+
+font-size:22px;
+
+color:#cbd5e1;
+
+margin-bottom:35px;
+
+line-height:1.6;
+
+}
+
+.heroButtons{
+
+display:flex;
+
+align-items:center;
+
+}
+
+.heroImage{
+
+width:45%;
+
+}
+
+.heroImage img{
+
+width:100%;
+
+border-radius:25px;
+
+box-shadow:0 0 50px rgba(124,58,237,.4);
+
+animation:float 4s ease-in-out infinite;
+
+}
+
+.stats{
+
+display:flex;
+
+gap:70px;
+
+margin-top:70px;
+
+}
+
+.stats h2{
+
+font-size:38px;
+
+margin:0;
+
+color:#8b5cf6;
+
+}
+
+.stats span{
+
+color:#94a3b8;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-18px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+/* Fade in page */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pageFade {
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* Floating image */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Glow button hover */
+.glowBtn:hover {
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.6);
+  transform: translateY(-2px);
+  transition: 0.3s ease;
+}
+
+/* Navbar blur animation */
+.navBlur {
+  transition: all 0.3s ease;
+}
+
+.navBlur:hover {
+  background: rgba(15, 23, 42, 0.8);
+}
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+@keyframes float{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-18px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+body{
+margin:0;
+overflow-x:hidden;
+font-family:Poppins,sans-serif;
+}
